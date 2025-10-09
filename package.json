@@ -4,7 +4,7 @@
   "description": "TypingMind MCP Connector for Render",
   "main": "index.js",
   "scripts": {
-    "start": "mcp $MCP_AUTH_TOKEN"
+    "start": "./node_modules/.bin/mcp $MCP_AUTH_TOKEN"
   },
   "dependencies": {
     "@typingmind/mcp": "latest"
