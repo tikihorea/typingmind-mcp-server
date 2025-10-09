@@ -1,6 +1,8 @@
 {
   "name": "typingmind-mcp-server",
   "version": "1.0.0",
+  "description": "TypingMind MCP Connector for Fly.io",
+  "main": "index.js",
   "scripts": {
     "start": "PORT=$PORT npx @typingmind/mcp $AUTH_TOKEN"
   },
