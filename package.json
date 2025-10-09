@@ -2,7 +2,7 @@
   "name": "typingmind-mcp-server",
   "version": "1.0.0",
   "scripts": {
-    "start": "npx @typingmind/mcp $AUTH_TOKEN"
+    "start": "PORT=$PORT npx @typingmind/mcp $AUTH_TOKEN"
   },
   "dependencies": {
     "@typingmind/mcp": "latest"
