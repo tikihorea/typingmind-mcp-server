@@ -1,15 +1,3 @@
-{
-  "name": "typingmind-mcp-server",
-  "version": "1.0.0",
-  "description": "TypingMind MCP Connector for Render",
-  "main": "index.js",
-  "scripts": {
-    "start": "npx @typingmind/mcp $AUTH_TOKEN"
-  },
-  "dependencies": {
-    "@typingmind/mcp": "latest"
-  },
-  "engines": {
-    "node": ">=18"
-  }
+"scripts": {
+  "start": "node server.js"
 }
