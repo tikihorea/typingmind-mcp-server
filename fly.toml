@@ -1,16 +1,23 @@
-app = "typingmind-mcp-server"
-primary_region = "fra"
+# fly.toml app configuration file generated for typingmind-mcp-server on 2025-10-09T17:38:54Z
+#
+# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
+#
+
+app = 'typingmind-mcp-server'
+primary_region = 'fra'
+
+[build]
 
 [http_service]
-auto_start_machines = true
-auto_stop_machines = false    # <-- keep machines running 24/7
-force_https = true
-internal_port = 8080          # <-- matches MCP default port
-min_machines_running = 1      # <-- ensure at least 1 machine is always running
-processes = [ "app" ]
+  internal_port = 8080
+  force_https = true
+  auto_stop_machines = 'stop'
+  auto_start_machines = true
+  min_machines_running = 0
+  processes = ['app']
 
 [[vm]]
-cpu_kind = "shared"
-cpus = 1
-memory = "1gb"
-memory_mb = 1024
+  memory = '1gb'
+  cpu_kind = 'shared'
+  cpus = 1
+  memory_mb = 256
